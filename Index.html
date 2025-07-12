@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        /* Mengatur dasar halaman */
+        body {
+            background-color: #f0f2f5; /* Warna latar belakang seperti di gambar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Ini adalah kotak putih utama */
+        .card-container {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 24px;
+            width: 300px; /* Lebar kotak */
+            text-align: center;
+        }
+
+        /* Mengatur gambar di dalam kotak */
+        .card-container img {
+            width: 100%; /* Membuat lebar gambar sama dengan lebar kotak */
+            border-radius: 8px; /* Sudut sedikit melengkung untuk gambar */
+            display: block;
+        }
+
+        /* Mengatur teks judul "Nyari apa ?" */
+        .card-container h2 {
+            font-size: 1.5em; /* Ukuran font lebih besar */
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        /* Mengatur teks subjudul "Nyari yang enggak ada ya ?" */
+        .card-container p {
+            color: #666;
+            margin-top: 0;
+            margin-bottom: 24px; /* Memberi jarak ke tombol di bawahnya */
+        }
+
+        /* Tombol biru yang sudah dipindahkan dan disesuaikan */
+        .action-button {
+            background-color: #1877f2; /* Warna biru */
+            color: white; /* Warna teks putih */
+            border: none;
+            border-radius: 6px;
+            padding: 12px; /* Ukuran padding di dalam tombol */
+            font-size: 1em;
+            font-weight: bold;
+            width: 100%; /* Lebar tombol memenuhi kotak */
+            cursor: pointer; /* Mengubah kursor menjadi tangan saat di atas tombol */
+            transition: background-color 0.3s; /* Efek transisi saat hover */
+        }
+
+        /* Efek saat kursor berada di atas tombol */
+        .action-button:hover {
+            background-color: #166fe5; /* Warna biru sedikit lebih gelap */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <img src="akuorang.jpg" alt="Character Image">
+        
+        <h2>"Nyari apa ?"</h2>
+        <p>Nyari yang enggak ada ya ?</p>
+        
+        <button class="action-button" id="myActionButton">ini yang lu cari</button>
+    </div>
+
+<script>
+        // Pastikan kode ini berada di *bawah* elemen button di HTML
+        const button = document.getElementById('myActionButton');
+
+        if (button) { // Periksa apakah tombol ditemukan sebelum menambahkan event listener
+            button.addEventListener('click', function() {
+                window.location.href = 'https://youtu.be/dQw4w9WgXcQ'; 
+                // Atau window.open('https://www.google.com', '_blank'); untuk tab baru
+            });
+        } else {
+            console.error("Tombol dengan ID 'myActionButton' tidak ditemukan.");
+        }
+    </script>
+
+</body>
+</html>
