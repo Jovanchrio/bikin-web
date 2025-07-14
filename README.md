@@ -7,14 +7,13 @@
 
 - 🌱 I’m currently learning **HTML,CSS, JAVASCRIPT**
 
-- 👨‍💻 All of my projects are available at [(this is my project btw :0)]((this is my project btw :0))
+- 👨‍💻 All of my projects are available at [(this is my project btw :0)
 
-- 💬 Ask me about **Html and Trending manga's**
+- 💬 Ask me about **Trending manga's**
 
 - 📫 How to reach me **lightkyra12@gmail.com**
 
-- 📄 Know about my experiences [I freshgraduated:•](I freshgraduated:•)
-
+- 📄 Know about my experiences [I freshgraduated:•]
 - ⚡ Fun fact **I'm Indonesian.**
 
 <h3 align="left">Connect with me:</h3>
